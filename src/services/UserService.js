@@ -33,7 +33,8 @@ class UserService extends GenericService {
   };
   isAdmin = () => {
     if (this.isLoggedIn()) {
-      if (this.getLoggedInUser().roles == "admin") return true;
+      console.log(this.getLoggedInUser());
+      if (this.getLoggedInUser().name == "soman") return true;
       else return false;
     } else return false;
   };
