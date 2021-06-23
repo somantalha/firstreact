@@ -83,7 +83,7 @@ const Features = (props) => {
           }}
         >
           {/* Table code started */}
-          <TableContainer component={Paper} style={{marginBottom:"3rem" }}>
+          <TableContainer component={Paper} style={{ marginBottom: "3rem" }}>
             <Table className={classes.table} aria-label="simple table">
               <TableHead>
                 <TableRow>
@@ -99,7 +99,10 @@ const Features = (props) => {
                   <TableRow key={index}>
                     <TableCell>
                       <img
-                        src={"http://localhost:4000/" + p.productImage}
+                        src={
+                          "https://restfulapi-backend.herokuapp.com/" +
+                          p.productImage
+                        }
                         width="50%"
                         style={{ height: "10rem" }}
                       />
