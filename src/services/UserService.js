@@ -15,8 +15,8 @@ class UserService extends GenericService {
           reject(err);
         });
     });
-  register = (name, email, password) =>
-    this.post("users/register", { name, email, password });
+  register = (name, email, password, role) =>
+    this.post("users/register", { name, email, password, role });
   logout = () => {
     localStorage.removeItem("token");
   };
@@ -34,8 +34,6 @@ class UserService extends GenericService {
   isAdmin = () => {
     if (this.isLoggedIn()) {
       if (this.getLoggedInUser().role == "admin") return true;
-      // console.log(this.getLoggedInUser());
-      // if (this.getLoggedInUser().name == "soman") return true;
       else return false;
     } else return false;
   };

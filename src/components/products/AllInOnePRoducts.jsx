@@ -29,10 +29,6 @@ const AllInOnePRoducts = (props) => {
         <div className="card" style={{ width: "15rem", height: "40rem" }}>
           <p>
             <img
-              // src={
-              //   "https://restfulapi-backend.herokuapp.com/" +
-              //   product.productImage
-              // }
               src={"http://localhost:4000/" + product.productImage}
               width="100%"
               style={{ height: "20rem" }}
