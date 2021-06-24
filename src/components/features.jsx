@@ -99,10 +99,11 @@ const Features = (props) => {
                   <TableRow key={index}>
                     <TableCell>
                       <img
-                        src={
-                          "https://restfulapi-backend.herokuapp.com/" +
-                          p.productImage
-                        }
+                        // src={
+                        //   "https://restfulapi-backend.herokuapp.com/" +
+                        //   p.productImage
+                        // }
+                        src={"http://localhost:4000/" + p.productImage}
                         width="50%"
                         style={{ height: "10rem" }}
                       />
